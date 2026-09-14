@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Mega Man Legends 2",
+    "id": "SLES-03556",
+    "boot_exe": "SLES_035.56"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "Europe",
+    "players": 2
+  },
+  "rom_identity": {
+    "cue_name": "Mega Man Legends 2 (Europe).cue",
+    "bin_name": "Mega Man Legends 2 (Europe) (Track 1).bin",
+    "track_counts": [
+      2
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 547380960,
+      "md5": "aa59b0481fae568a4e970b146e1e1422",
+      "sha1": "7deaf00c967c7a45fc1e9778612da970f57ab27a",
+      "crc32": "c8a989e2"
+    },
+    "disc_fp": "c7b876f236333a34363cc6f37856a9d46cf88f3c012e2d0ea8231f0f5f33e6b7"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80051C18",
+    "text_size": "0x00069000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 645,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
